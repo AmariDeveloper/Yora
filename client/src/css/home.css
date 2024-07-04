@@ -1,0 +1,120 @@
+.landing{
+      position: relative;
+}
+.hero-slider{
+     height: 120vh;
+     position: absolute;
+     top: 0;
+     width: 100%;
+}
+.hero-slide-image{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;;
+    z-index: 5;
+}
+.hero-slide-image.one{
+    background: url("../assets/banner1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: expand 20s linear infinite;
+    -webkit-animation: expand 20s linear infinite;
+}
+.hero-slide-image.two{
+    background: url("../assets/banner3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: expand 20s linear infinite;
+    -webkit-animation: expand 20s linear infinite;
+}
+
+@keyframes expand{
+    100%{
+            transform: scale3d(1.3,1.3,1.3);
+            -webkit-transform: scale3d(1.3,1.3,1.3);
+            -moz-transform: scale3d(1.3,1.3,1.3);
+            -ms-transform: scale3d(1.3,1.3,1.3);
+            -o-transform: scale3d(1.3,1.3,1.3);
+      }
+}
+.hero-slide-moja{
+    width: 100vw;
+    height: 120vh;
+   display: flex;
+   align-items: center;
+}
+.hero-texts{
+      width: 900px;
+      position: relative;
+      z-index: 10;
+}
+
+.hero-date-venue{
+       display: flex;
+       gap: 10px;
+       flex-wrap: wrap;
+       align-items: center;
+}
+
+.hero-date-venue > div{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: white;
+}
+.hero-date-venue span{
+    display: inline-flex;
+    color: var(--green-color);
+    font-size: 20px;
+}
+.hero-date-venue h4{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dashy{
+     width: 1px;
+     height: 20px;
+     background: rgba(210, 210, 210, 0.574);
+}
+
+.hero-texts h1{
+       font-family: var(--bold-font);
+       font-size: 85px;
+       font-weight: 700;
+       color: whitesmoke;
+}
+
+.hero-texts p{
+     font-size: 20px;
+     color: rgb(238, 238, 238);
+     width: 90%;
+     margin-bottom: 20px;
+     line-height: 1.7;
+}
+
+.hero-texts .hero-btns{
+    display: flex;
+    gap: 20px;;
+}
+
+.hero-btns a{
+      width: 180px;
+      height: 50px;
+      background: var(--main-color);
+      color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 600;
+}
+
+.hero-btns a:nth-child(2){
+      background: transparent;
+      border: 2px solid var(--main-color);
+      color: var(--main-color);
+      font-weight: 600;
+      font-size: 17px;
+}
