@@ -3,8 +3,6 @@
 }
 .hero-slider{
      height: 120vh;
-     position: absolute;
-     top: 0;
      width: 100%;
 }
 .hero-slide-image{
@@ -15,20 +13,27 @@
     z-index: 5;
 }
 .hero-slide-image.one{
-    background: url("../assets/banner1.jpg") no-repeat;
+    background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0,0.1)), url("../assets/banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     animation: expand 20s linear infinite;
     -webkit-animation: expand 20s linear infinite;
 }
 .hero-slide-image.two{
-    background: url("../assets/banner3.jpg") no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../assets/banner3.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     animation: expand 20s linear infinite;
     -webkit-animation: expand 20s linear infinite;
 }
 
+.hero-slide-image.three{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../assets/banner4.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: expand 20s linear infinite;
+    -webkit-animation: expand 20s linear infinite;
+}
 @keyframes expand{
     100%{
             transform: scale3d(1.3,1.3,1.3);
@@ -48,6 +53,10 @@
       width: 900px;
       position: relative;
       z-index: 10;
+      opacity: 0;
+}
+.hero-texts.active{
+     opacity: 1;
 }
 
 .hero-date-venue{
@@ -55,6 +64,25 @@
        gap: 10px;
        flex-wrap: wrap;
        align-items: center;
+       opacity: 0;
+       transform: translateY(-20px);
+       -webkit-transform: translateY(-20px);
+       -moz-transform: translateY(-20px);
+       -ms-transform: translateY(-20px);
+       -o-transform: translateY(-20px);
+       transition: all 2.5s ease;
+       -webkit-transition: all 2.5s ease;
+       -moz-transition: all 2.5s ease;
+       -ms-transition: all 2.5s ease;
+       -o-transition: all 2.5s ease;
+}
+.hero-texts.active .hero-date-venue{
+      opacity: 1;
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
 }
 
 .hero-date-venue > div{
@@ -84,21 +112,69 @@
        font-size: 85px;
        font-weight: 700;
        color: whitesmoke;
+       opacity: 0;
+       transform: translateY(100px);
+       -webkit-transform: translateY(100px);
+       -moz-transform: translateY(100px);
+       -ms-transform: translateY(100px);
+       -o-transform: translateY(100px);
+       transition: all 1.8s ease;
+       -webkit-transition: all 1.8s ease;
+       -moz-transition: all 1.8s ease;
+       -ms-transition: all 1.8s ease;
+       -o-transition: all 1.8s ease;
 }
-
+.hero-texts.active h1,
+.hero-texts.active p{
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      opacity: 1;
+}
 .hero-texts p{
      font-size: 20px;
      color: rgb(238, 238, 238);
      width: 90%;
      margin-bottom: 20px;
      line-height: 1.7;
+     transform: translateY(50px);
+     -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+     -ms-transform: translateY(50px);
+     -o-transform: translateY(50px);
+     opacity: 0;
+     transition: all 2.2s ease;
+     -webkit-transition: all 2.2s ease;
+     -moz-transition: all 2.2s ease;
+     -ms-transition: all 2.2s ease;
+     -o-transition: all 2.2s ease;
 }
 
 .hero-texts .hero-btns{
     display: flex;
-    gap: 20px;;
+    gap: 20px;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    opacity: 0;
+    transition: all 2.5s ease;
+    -webkit-transition: all 2.5s ease;
+    -moz-transition: all 2.5s ease;
+    -ms-transition: all 2.5s ease;
+    -o-transition: all 2.5s ease;
 }
-
+.hero-texts.active .hero-btns{
+       opacity: 1;
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+       -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+}
 .hero-btns a{
       width: 180px;
       height: 50px;
@@ -117,4 +193,346 @@
       color: var(--main-color);
       font-weight: 600;
       font-size: 17px;
+}
+
+
+.about-section{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 20;
+}
+
+.countdown-strip{
+      width: 700px;
+      background: white;
+      height: auto;
+      margin: -80px auto 0px auto;
+      clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+      padding: 10px 0;
+}
+
+.countdown-strip h3{
+      text-align: center;
+      font-weight: 500;
+      font-family: var(--bold-font);
+      margin: 10px 0;
+}
+
+.countdown{
+     display: flex;
+     justify-content: center;
+     width: 80%;
+     margin: auto;
+     gap: 20px;
+     align-items: center;
+}
+.countdown .separator{
+     height: 50px;
+     width: 1px;
+     background: rgba(237, 237, 237, 0.652);
+     display: inline-flex;
+}
+.countdown .count-box{
+      text-align: center;
+      width: 80px;
+}
+.count-box span{
+      font-weight: 600;
+      font-family: var(--regular-font);
+      font-size: 55px;
+}
+.count-box.two{
+      color: var(--main-color)
+}
+.count-box.four{
+      color: var(--green-color);
+}
+
+.partners-section{
+     margin-top: 60px;
+     display: grid;
+     grid-template-columns: 1.2fr 2.5fr;
+     gap: 50px;
+}
+
+.partners-texts h1{
+      font-size: 50px;
+      font-family: var(--bold-font);
+      margin-bottom: 10px;
+}
+
+.partners-texts p{
+      font-size: 18px;
+      line-height: 1.7;
+}
+.partners-logos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+}
+.partners-logos img{
+       width: 170px;
+       height: 100px;
+       object-fit: contain;
+}
+
+.about-description-wrapper{
+      border-top: 1px solid rgb(248, 242, 244);
+      margin-top: 80px;
+      padding: 60px 0;
+      display: grid;
+      grid-template-columns: 1.1fr 1.5fr;
+      gap: 80px;
+}
+
+.about-description-texts{
+       padding-bottom: 60px;
+}
+.about-description-texts h3{
+      font-size: 22px;
+      text-transform: uppercase;
+      color: var(--green-color);
+      font-weight: 500;
+}
+.about-description-texts h1{
+      font-size: 65px;
+      font-family: var(--bold-font);
+      margin: 15px 0;
+}
+.about-description-texts p{
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgb(60, 60, 60);
+}
+
+.about-time-venue{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;;
+}
+
+.about-box h4{
+      text-transform: uppercase;
+      color: var(--main-color);
+      font-weight: 600;
+      margin-bottom: 10px;
+}
+
+.about-description-texts a{
+       display: inline-block;
+       padding: 15px 40px;
+       margin-top: 40px;
+       background: var(--main-color);
+       color: white;
+       font-weight: 400;
+}
+
+
+.about-description-images{
+      position: relative;
+}
+
+
+.about-description-images .image-box{
+    position:absolute;
+    bottom: 0;
+    width: 350px;
+    height: 400px;
+    z-index: 9;
+}
+.image-box .overlay{
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 0%, transparent 0%, rgba(223, 85, 85, 0.636) 100%);
+      z-index: 10;
+      position: absolute;
+}
+.about-description-images .large-image{
+      position: absolute;
+       width: 450px;
+       height: 700px;
+      top: 0;
+      z-index: 5;
+      right: 0;
+}
+
+.banner-section{
+      padding: 100px 0;
+      background:linear-gradient(217deg, rgba(118, 0, 0, 0.89), rgba(5, 84, 47, 0.892) 70.71%), url("../assets/banner5.jpg");
+      background-size: cover;
+      background-position: top;
+}
+.banner-numbers{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+}
+.banner-moja{
+      text-align: center;
+}
+
+.banner-moja h2{
+      font-size: 75px;
+      font-weight: 700;
+      color: white;
+}
+.banner-moja h4{
+     font-size: 20px;
+     font-weight: 300;
+     color: whitesmoke;
+     width: 75%;
+     margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1090px){
+      .hero-texts{
+           margin: auto;
+           text-align: center;
+           width: 90%;
+      }
+      .hero-date-venue,
+      .hero-texts .hero-btns{
+            justify-content: center;
+      }
+      .hero-texts p{
+             margin: 0px auto 20px auto;
+      }
+      .hero-texts h1{
+            font-size: 75px
+      }
+      .partners-section,
+      .about-description-wrapper{
+           grid-template-columns: 1fr;
+           gap: 30px;
+      }
+      .about-description-images{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+      }
+      .about-description-images .image-box,
+      .about-description-images .large-image{
+           position: relative;
+           height: 500px;
+           width: 100%;
+      }
+
+}
+
+
+@media(max-width: 768px){
+       .hero-texts{
+            width: 100%;
+       }
+       .hero-texts h1,
+       .about-description-texts h1{
+             font-size: 50px;
+             margin: 10px 0;
+       }
+       .hero-texts p{
+            font-size: 17px;
+       }
+       .countdown-strip{
+            width: 90%;
+       }
+       .countdown{
+            gap: 5px;
+       }
+       .count-box span{
+            font-size: 40px;
+       }
+       .about-description-texts h3{
+            font-size: 18px;
+       }
+}
+
+@media(max-width: 530px){
+       .hero-texts .hero-btns{
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+       }
+       .hero-texts h1{
+             font-size: 40px;;
+       }
+       .dashy{
+            display: none !important
+       }
+       .hero-date-venue > div{
+            align-items: flex-start;
+       }
+       .hero-date-venue h4{
+             font-size: 15px;
+       }
+       .countdown-strip{
+            margin: -50px auto 0px auto;
+       }
+       .partners-texts{
+            text-align: center;
+       }
+       .partners-texts h1{
+             font-size: 40px;
+       }
+
+       .partners-logos{
+              justify-content: center;
+       }
+}
+
+@media(max-width: 340px){
+      .countdown-strip{
+           width: 100%;
+      }
+      .hero-texts h1{
+        font-size: 35px;;
+     }
 }

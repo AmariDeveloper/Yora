@@ -1,6 +1,10 @@
 import  {Link, NavLink } from "react-router-dom"
 import logo from "../../../assets/logo2.png"
+import { CgMenuRight } from "react-icons/cg";
+import { useContext } from "react";
+import { sidebarContext } from "./sidebarContext";
 const Header = () => {
+  const [sidebarStatus, setSidebarStatus ] = useContext(sidebarContext)
   return (
     <header>
              <div className="inner-row">
@@ -19,6 +23,8 @@ const Header = () => {
 
                                           <div className="header-actions">
                                                    <Link to="/">Buy Ticket</Link>
+
+                                                   <span className="menu-btn" onClick={() => setSidebarStatus(true)}><CgMenuRight /></span>
                                           </div>
                                   </nav>
                        </div>

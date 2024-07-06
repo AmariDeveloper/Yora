@@ -32,9 +32,10 @@ const HeroSection = () => {
                                modules={[EffectCreative, Autoplay]}
                          >
                                    <SwiperSlide>
-                                            <div className="hero-slide-moja">
+                                        {({ isActive }) => (
+                                             <div className="hero-slide-moja">
                                                     <div className="inner-row">
-                                                               <div className="hero-texts">
+                                                               <div className={ isActive ? "hero-texts active" : "hero-texts"}>
                                                                         <div className="hero-date-venue">
                                                                                   <div className="date"> 
                                                                                             <span><IoCalendarOutline /></span>
@@ -57,12 +58,14 @@ const HeroSection = () => {
                                                        </div>
                                                        <div className="hero-slide-image one"></div>
                                             </div>
+                                        )}
                                    </SwiperSlide>
                                    <SwiperSlide>
+                                        { ({ isActive }) => (
                                             <div className="hero-slide-moja">
-                                            <div className="hero-slide-image two"></div>
+                                                  <div className="hero-slide-image two"></div>
                                                     <div className="inner-row">
-                                                               <div className="hero-texts">
+                                                               <div className={ isActive ? "hero-texts active" : "hero-texts"}>
                                                                         <div className="hero-date-venue">
                                                                                   <div className="date"> 
                                                                                             <span><IoCalendarOutline /></span>
@@ -84,6 +87,37 @@ const HeroSection = () => {
                                                                    </div>
                                                        </div>
                                             </div>
+                                        )}
+
+                                   </SwiperSlide>
+                                   <SwiperSlide>
+                                        { ({ isActive }) => (
+                                            <div className="hero-slide-moja">
+                                                 <div className="hero-slide-image three"></div>
+                                                    <div className="inner-row">
+                                                               <div className={ isActive ? "hero-texts active" : "hero-texts"}>
+                                                                        <div className="hero-date-venue">
+                                                                                  <div className="date"> 
+                                                                                            <span><IoCalendarOutline /></span>
+                                                                                            <h4>8<sup>th</sup> <span><BsDashLg /></span> 10<sup>th</sup> October, 2024</h4>
+                                                                                  </div>
+                                                                                  <span className="dashy"></span>
+                                                                                  <div className="venue">
+                                                                                            <span><GrLocation /></span>
+                                                                                            <h4>Sarit Expo Center, Westlands Nairobi</h4>
+                                                                                  </div>
+                                                                       </div>
+                                                                        <h1>The Biggest African Entreprenuarship Summit.</h1>
+                                                                        <p>Join this year&apos;s biggest entreprenuarship conference with over 150 participants and some of the most renowned keynote speakers of the present day.</p>
+
+                                                                        <div className="hero-btns">
+                                                                                   <Link to={"/"}>Register Now</Link>
+                                                                                   <Link to={"/"}>Explore</Link>
+                                                                        </div>
+                                                                   </div>
+                                                       </div>
+                                            </div>
+                                        )}
                                    </SwiperSlide>
                         </Swiper>
             </div>
