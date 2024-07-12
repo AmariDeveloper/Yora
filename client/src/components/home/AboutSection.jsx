@@ -17,18 +17,14 @@ import about1 from "../../assets/about1.webp"
 import about2 from "../../assets/about2.webp"
 
 const AboutSection = () => {
-    const DAYS_TO_GO = 94 * 24 * 60 * 60 * 1000
-    const RIGHT_NOW = new Date().getTime();
-
-    const REMAINING_TIME = RIGHT_NOW + DAYS_TO_GO;
-
+ const DAYS_TO_GO = new Date("2024-10-8").getTime();
   return (
     <div className="about-section">
                 <div className="inner-row">
                            <div className="about-section-content">
                                      <div className="countdown-strip">
                                                   <h3>Days to Go</h3>
-                                                 <CounterWrap targetDate={REMAINING_TIME}  />
+                                                 <CounterWrap targetDate={DAYS_TO_GO}  />
                                      </div>
 
                                      <div className="partners-section">

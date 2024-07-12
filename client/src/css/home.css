@@ -388,49 +388,486 @@
 }
 
 
+.summit-section{
+    padding: 100px 0;
+    background: url("../assets/summit_bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.summit-intro{
+    width: 980px;
+    margin: auto;
+    text-align: center;
+}
 
+.summit-intro h3{
+     color: var(--green-color);
+     font-weight: 600;
+}
+.summit-intro h1{
+        font-size: 65px;
+        margin: 10px auto;
+        font-family: var(--bold-font);
+        font-weight: 800;;
+}
+.summit-intro h1 span{
+      color: var(--main-color)
+}
+.summit-intro p{
+      font-size: 20px;
+      line-height: 1.7;
+}
+.summit-wrapper{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 30px;
+       margin: 50px 0;
+}
+.theme-moja .number{
+      gap: 5px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+}
+.theme-moja .number span{
+     font-size: 50px;
+     font-family: var(--bold-font);
+     font-weight: 999;
+     width: 70px;
+     height: 70px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.5s ease;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+}
+.theme-moja .number .icon{
+    font-size: 10px;
+    width: max-content;
+    height: max-content;
+    opacity: 0;
+}
+.theme-moja:nth-child(1) .number span{
+      color: var(--green-color);
+}
+.theme-moja:nth-child(1):hover .number span{
+      color: whitesmoke;
+      background: var(--green-color);
+}
+.theme-moja:nth-child(1):hover .number .icon{
+      color: var(--green-color);
+      opacity: 1;
+}
+.theme-moja:nth-child(2) .number span{
+    color: rgb(211, 180, 0);
+}
+.theme-moja:nth-child(2):hover .number span{
+    color: whitesmoke;
+    background: rgb(211, 180, 0);
+}
+.theme-moja:nth-child(2):hover .number .icon{
+    color: rgb(211, 180, 0);
+    opacity: 1;
+}
+.theme-moja:nth-child(3) .number span{
+    color: var(--main-color)
+}
+.theme-moja:nth-child(3):hover .number span{
+    color: whitesmoke;
+    background: var(--main-color);
+}
+.theme-moja:nth-child(3):hover .number .icon{
+    color: var(--main-color);
+    opacity: 1;
+}
+.theme-moja:nth-child(4) .number span{
+    color: rgb(0, 211, 183);
+}
+.theme-moja:nth-child(4):hover .number span{
+    color: whitesmoke;
+    background: rgb(0, 211, 183);
+}
+.theme-moja:nth-child(4):hover .number .icon{
+    color: rgb(0, 211, 183);
+    opacity: 1;
+}
 
+.theme-moja:nth-child(5) .number span{
+    color: rgb(0, 151, 211);
+}
+.theme-moja:nth-child(5):hover .number span{
+    color: whitesmoke;
+    background: rgb(0, 151, 211);
+}
+.theme-moja:nth-child(5):hover .number .icon{
+    color: rgb(0, 151, 211);
+    opacity: 1;
+}
+.theme-moja:nth-child(6) .number span{
+    color: rgb(183, 0, 211);
+}
+.theme-moja:nth-child(6):hover .number span{
+    color: whitesmoke;
+    background: rgb(183, 0, 211);
+}
+.theme-moja:nth-child(6):hover .number .icon{
+    color: rgb(183, 0, 211);
+    opacity: 1;
+}
+.theme-moja:nth-child(7) .number span{
+    color: rgb(211, 98, 0);
+}
+.theme-moja:nth-child(7):hover .number span{
+    color: whitesmoke;
+    background: rgb(211, 98, 0);
+}
+.theme-moja:nth-child(7):hover .number .icon{
+    color: rgb(211, 98, 0);
+    opacity: 1;
+}
+.theme-moja:nth-child(8) .number span{
+    color: rgb(255, 187, 0);
+}
+.theme-moja:nth-child(8):hover .number span{
+    color: whitesmoke;
+    background: rgb(255, 187, 0);
+}
+.theme-moja:nth-child(8):hover .number .icon{
+    color: rgb(255, 187, 0);
+    opacity: 1;
+}
+.theme-moja  h3{
+     font-size: 24px;
+     font-weight: 600;
+     line-height: 1.5;
+}
 
+.masterclasses-wrapper{
+        margin-top: 70px;
+        display: block;
+}
+.masterclasses-intro{
+      display: flex;
+      gap: 80px;;
+      align-items: center;
+}
+.masterclasses-intro h2{
+        font-size: 65px;
+        font-family: var(--bold-font);
+}
 
+.masterclasses-intro p{
+        font-size: 18px;
+        line-height: 1.7;
+        color: rgb(50, 50, 50);
+}
 
+.masterclasses-intro a{
+       width: 240px;
+       height: 50px;
+       display: flex;
+       font-size: 16px;
+       align-items: center;
+       justify-content: center;
+       flex-shrink: 0;
+       background: var(--main-color);
+       color: whitesmoke;
+}
 
+.masterclasses-init{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        margin-top: 60px;
+}
 
+.masterclass-moja{
+        position: relative;
+}
 
+.masterclass-overlay{
+       position: relative;
+       height: 500px;
+       overflow: hidden;
+}
+.masterclass-moja img{
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       z-index: 5;
+}
+.masterclass-moja h4{
+       font-size: 20px;
+       margin: 10px;
+       font-weight: 600;
+       transition: all 0.7s ease;
+       line-height: 1.6;
+       -webkit-transition: all 0.7s ease;
+       -moz-transition: all 0.7s ease;
+       -ms-transition: all 0.7s ease;
+       -o-transition: all 0.7s ease;
+}
 
+.masterclass-moja .overlay-texts{
+        position: absolute;
+        z-index: 6;
+        height: 100%;
+        transform: translateY(100%);
+        background: rgba(107, 5, 5, 0.6);
+        color: whitesmoke;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+}
+.masterclass-moja:hover .masterclass-overlay .overlay-texts{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+.overlay-texts h4{
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+      margin-bottom: 10px;
+}
+.overlay-texts p{
+       font-weight: whitesmoke;
+       line-height: 1.7;
+}
 
+.overlay-texts a{
+      width: 150px;
+      height: 50px;
+      background-color: var(--main-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      margin-top: 20px;
+}
 
+.masterclass-moja:hover .m-n{
+      transform: translateY(-150%);
+      -webkit-transform: translateY(-150%);
+      -moz-transform: translateY(-150%);
+      -ms-transform: translateY(-150%);
+      -o-transform: translateY(-150%);
+}
 
+.speakers-section{
+      padding: 100px 0;
+      background: rgb(15, 0, 0);
+}
+.speakers-intro{
+       color: whitesmoke;
+}
+.speakers-intro{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+}
+.speakers-intro h1{
+       font-family: var(--bold-font);
+       font-size: 65px;
+       margin-bottom: 10px;
+}
+.speakers-intro p{
+       width: 600px;
+       font-size: 20px;
+       line-height: 1.6;
+}
+.speakers-action{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+}
+.speakers-action .slider-navigation{
+      display: flex;
+      gap: 30px;
+}
+  
 
+.speakers-action span{
+      font-size: 45px;
+      cursor: pointer;
+      color: var(--main-color);
+}
 
+.speakers-action a{
+       width: 150px;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background-color: var(--main-color);
+       color: white;
+}
 
+.speakers-row{
+      margin: 60px 0;
+}
 
+.speaker-moja h3{
+      font-size: 24px;
+      color: whitesmoke;
+      margin-top: 20px;
+      font-weight: 400;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+}
+.speaker-moja p{
+       color: gainsboro;
+       font-weight: 300;
+       margin-top: 10px;
+       line-height: 1.6;
+}
 
+.speaker-moja .image-box{
+       overflow: hidden;
+}
+.speaker-moja .image-box img{
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+}
+.speaker-moja:hover .image-box img{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
 
+.speaker-moja:hover h3{
+      color: var(--green-color);
+      font-weight: 500;
+}
 
+.extra-attendance{
+       display: grid;
+       grid-template-columns: 1.2fr 2.5fr;
+       gap: 40px;
+       margin-top: 80px;
+}
 
+.extra-attendance h2{
+       color: whitesmoke;
+       font-size: 65px;
+       font-weight: 600;
+       font-family: var(--bold-font);
+}
+.extra-attendance h3{
+       font-size: 25px;
+       color: whitesmoke;
+       margin-top: 30px;
+       font-weight: 300;
+       line-height: 1.6;
+}
+.attendance-row{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 30px;
+       justify-content: center;
+}
+.attendance-moja{
+      color: white;
+      padding: 15px 40px;
+}
+.attendance-moja:nth-child(odd){
+      background-color: rgba(255, 0, 0, 0.1);
+}
+.attendance-moja:nth-child(even){
+       background: rgba(0, 255, 98, 0.22);
+}
+.attendance-moja h4{
+       font-weight: 400;;
+}
 
+.tickets-section{
+      padding: 100px 0;
+}
 
+.tickets-intro{
+       width: 900px;
+       margin: auto;
+       text-align: center;
+}
+.tickets-intro h3{
+       color: var(--green-color)
+}
+.tickets-intro h1{
+       margin-top: 10px;
+      font-size: 65px;
+      font-family: var(--bold-font);
+      font-weight: 700;
+}
 
+.tickets-row{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 40px;
+       margin-top: 50px;
+}
 
+.ticket-moja img{
+       height: 350px;
+}
 
+.ticket-moja h3{
+      font-size: 24px;
+      margin: 10px 0;
+      font-weight: 500;
+}
 
+.ticket-moja p{
+      line-height: 1.6;
+      color: rgb(60, 60, 60);
+}
 
+.tickets-body{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tickets-body-column{
+       padding: 100px 0;
+       background: linear-gradient(to right, rgb(109, 0, 0), rgb(0, 107, 43));
+       color: whitesmoke;
+}
+.inner-body{
+       width: 80%;
+       margin: auto;
+}
+.tickets-body-column h1{
+       font-size: 70px;
+       font-family: var(--bold-font);
+       margin-bottom: 10px;
+}
+.tickets-body-column p{
+      font-size: 20px;
+      line-height: 1.6;
+}
 
 
 @media(max-width: 1090px){
@@ -465,16 +902,31 @@
            height: 500px;
            width: 100%;
       }
-
+      .summit-intro{
+              width: 100%;
+      }
+      .summit-wrapper,
+      .masterclasses-init{
+              grid-template-columns: 1fr 1fr;
+      }
 }
 
+@media(max-width: 900px){
+        .masterclasses-intro{
+               flex-direction: column;
+               gap: 30px;
+               text-align: center;
+        }
+}
 
 @media(max-width: 768px){
        .hero-texts{
             width: 100%;
        }
        .hero-texts h1,
-       .about-description-texts h1{
+       .about-description-texts h1,
+       .summit-intro h1,
+       .masterclasses-intro h2{
              font-size: 50px;
              margin: 10px 0;
        }
@@ -493,6 +945,9 @@
        .about-description-texts h3{
             font-size: 18px;
        }
+       .theme-moja h3{
+             font-size: 20px;
+       }
 }
 
 @media(max-width: 530px){
@@ -501,7 +956,10 @@
             gap: 10px;
             align-items: center;
        }
-       .hero-texts h1{
+       .hero-texts h1,
+       .about-description-texts h1,
+       .summit-intro h1,
+       .masterclasses-intro h2{
              font-size: 40px;;
        }
        .dashy{
@@ -526,13 +984,41 @@
        .partners-logos{
               justify-content: center;
        }
+       .banner-numbers{
+              gap: 20px;
+       }
+       .banner-moja h2{
+            font-size: 60px;
+       }
+
+       .summit-wrapper,
+       .masterclasses-init{
+              grid-template-columns: 1fr;
+       }
 }
 
 @media(max-width: 340px){
       .countdown-strip{
            width: 100%;
       }
-      .hero-texts h1{
+      .hero-texts h1,
+      .about-description-texts h1{
         font-size: 35px;;
      }
+     .about-time-venue{
+        grid-template-columns: 1fr;
+      }
+      .about-description-texts h3{
+           font-size: 15px;
+      }
+      .about-description-images{
+            flex-direction: column;
+      }
+      .about-description-images .image-box,
+      .about-description-images .large-image{
+            height: 300px;
+      }
+      .about-description-texts a{
+             padding: 15px ;
+      }
 }
