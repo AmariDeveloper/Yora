@@ -35,7 +35,7 @@ const Speakers = () => {
 
                                   <div className="speakers-row">
                                           <Swiper
-                                                   slidesPerView={4}
+                                                   slidesPerView={1}
                                                    spaceBetween={30}
                                                    autoplay={{
                                                            delay: 5000,
@@ -44,6 +44,17 @@ const Speakers = () => {
                                                    loop={true}
                                                    modules={[Autoplay]}
                                                    onSwiper={(swiper) => setSwiperRef(swiper) }
+                                                   breakpoints={{
+                                                            1090: {
+                                                                    slidesPerView: 4
+                                                            },
+                                                            768: {
+                                                                    slidesPerView: 3
+                                                            },
+                                                            480: {
+                                                                   slidesPerView: 2
+                                                            }
+                                                   }}
                                            >
                                                     { speakers.map(item => 
                                                           <SwiperSlide key={item.id}>

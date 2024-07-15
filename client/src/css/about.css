@@ -1,0 +1,124 @@
+.hero-landing{
+      height: 55vh;
+}
+
+.hero-landing.about{
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/banner6.jpg") no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+
+.hero-landing-body{
+      display: flex;
+      height: 100%;
+      color: whitesmoke;
+      padding-top: 100px;;
+}
+
+.hero-landing-body h1{
+       font-size: 65px;
+       font-family: var(--bold-font);
+       margin-bottom: 10px;
+}
+
+.hero-landing-body h4{
+      font-size: 26px;
+      font-weight: 500;
+}
+
+.about-body-section{
+       padding: 100px 0;
+}
+.about-body-content{
+        display: grid;
+        grid-template-columns: 2fr 1.2fr;
+        gap: 80px;
+}
+
+.about-body-texts img{
+     max-height: 400px;
+}
+
+.about-body-texts h1{
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.about-body-texts h1 span{
+      color: var(--green-color);
+      display: inline-flex;
+      font-size: 60px;
+      margin-top: 6px;
+}
+.about-body-texts h3{
+      font-size: 30px;
+      font-weight: 600;
+}
+
+.about-body-texts p{
+      font-size: 18px;
+      margin: 10px 0;
+      line-height: 1.7;
+}
+.about-body-texts p span{
+     font-weight: 600;
+     font-size: 19px;
+     color: var(--main-color);
+}
+.about-body-texts ul{
+      list-style: disc;
+      width: 90%;
+      margin: auto;
+}
+.about-body-texts ul li{
+      margin-bottom: 10px;
+      line-height: 1.7;
+}
+.about-body-texts ul li span{
+      font-size: 19px;
+      font-weight: 600;
+}
+
+.about-extra-texts{
+      background: var(--main-color);
+      padding: 40px;
+      color: whitesmoke;
+      height: max-content;
+}
+.about-extra-texts h3{
+       font-size: 25px;
+       text-transform: uppercase;
+       margin-bottom: 15px;
+}
+.about-extra-texts p{
+      font-weight: 300;
+      margin-bottom: 10px;
+      line-height: 1.7;
+}
+.about-extra-texts p span{
+      font-size: 18px;
+      font-weight: 600;
+}
+
+@media(max-width: 1100px){
+    .about-body-content{
+           gap: 40px;
+    }
+}
+@media(max-width: 1090px){
+    .about-body-content{
+            grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 768px){
+    .hero-landing-body h1{
+           font-size: 50px;
+    }
+    .hero-landing-body h4{
+           font-size: 22px;
+           line-height: 1.6;
+    }
+}

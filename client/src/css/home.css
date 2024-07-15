@@ -939,7 +939,7 @@
 
 
 .testimonials-section{
-       padding: 100px;
+       padding: 100px 0;
 }
 
 .testimonials-intro{
@@ -1018,12 +1018,6 @@
       font-weight: 500;
 }
 
-
-
-
-
-
-
 @keyframes scrollslide{
       to{
              transform: translateX(-50%);
@@ -1035,11 +1029,59 @@
  }
 
 
+.call-to-action{
+       padding: 100px 0;
+       background: linear-gradient(to right, rgba(1, 80, 25, 0.85), rgba(116, 2, 2, 0.85)), url("../assets/callBg.png") no-repeat;
+       background-size: contain;
+       background-position: center;
+}
+
+.call-to-action-content{
+      display: flex;
+      justify-content: space-between;
+      gap: 80px;
+      color: whitesmoke;
+}
+.call-to-action-content .left-column{
+      max-width: 600px;
+}
+.call-to-action-content h1{
+      font-size: 65px;
+      font-family: var(--bold-font);
+      font-weight: 700;
+      margin-bottom: 10px;
+}
+.call-to-action-content h4{
+      font-size: 25px;
+      font-weight: 400;
+}
+
+.call-to-action-content .right-column h3{
+        font-size: 35px;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+}
+.call-to-action-content .right-column h3:hover span{
+       animation: swipup 0.8s ease;
+       -webkit-animation: swipup 0.8s ease;
+}
+
+.call-to-action-content .right-column h3 span{
+       display: flex;
+       margin-top: 5px;
+}
 
 
-
-
-
+@keyframes swipup{
+      0%{
+            transform: translate(-10px, 10px)      ;
+            -webkit-transform: translate(-10px, 10px)      ;
+            -moz-transform: translate(-10px, 10px)      ;
+            -ms-transform: translate(-10px, 10px)      ;
+            -o-transform: translate(-10px, 10px)      ;
+}
+}
 
 
 @media(max-width: 1090px){
@@ -1074,12 +1116,24 @@
            height: 500px;
            width: 100%;
       }
-      .summit-intro{
+      .summit-intro,
+      .testimonials-intro,
+      .tickets-intro{
               width: 100%;
       }
       .summit-wrapper,
-      .masterclasses-init{
+      .masterclasses-init,
+      .tickets-row{
               grid-template-columns: 1fr 1fr;
+      }
+      .speakers-intro{
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+      }
+      .tickets-body,
+      .extra-attendance{
+             grid-template-columns: 1fr;
       }
 }
 
@@ -1098,14 +1152,21 @@
        .hero-texts h1,
        .about-description-texts h1,
        .summit-intro h1,
-       .masterclasses-intro h2{
+       .masterclasses-intro h2,
+       .tickets-body-column h1,
+       .tickets-intro h1,
+       .speakers-intro h1,
+       .call-to-action-content h1,
+       .extra-attendance h2,
+       .testimonials-intro h1{
              font-size: 50px;
              margin: 10px 0;
        }
        .hero-texts p{
             font-size: 17px;
        }
-       .countdown-strip{
+       .countdown-strip,
+       .speakers-intro p{
             width: 90%;
        }
        .countdown{
@@ -1120,6 +1181,14 @@
        .theme-moja h3{
              font-size: 20px;
        }
+       .call-to-action-content{
+               flex-direction: column;
+               gap: 30px;
+       }
+       .call-to-action-content .right-column h3{
+             font-size: 25px;
+             font-weight: 600;
+       }
 }
 
 @media(max-width: 530px){
@@ -1131,7 +1200,13 @@
        .hero-texts h1,
        .about-description-texts h1,
        .summit-intro h1,
-       .masterclasses-intro h2{
+       .masterclasses-intro h2,
+       .tickets-body-column h1,
+       .tickets-intro h1,
+       .speakers-intro h1,
+       .call-to-action-content h1,
+       .extra-attendance h2,
+       .testimonials-intro h1{
              font-size: 40px;;
        }
        .dashy{
@@ -1164,7 +1239,8 @@
        }
 
        .summit-wrapper,
-       .masterclasses-init{
+       .masterclasses-init,
+       .tickets-row{
               grid-template-columns: 1fr;
        }
 }
