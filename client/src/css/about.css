@@ -102,6 +102,140 @@
       font-weight: 600;
 }
 
+
+.about-themes{
+      padding: 0px 0px 100px 0px;
+}
+
+
+.about-themes-intro{
+      display: flex;
+      gap: 40px;
+      align-items: center;
+}
+.about-themes-intro h2{
+        font-size: 50px;
+        font-family: var(--bold-font);
+        margin-bottom: 10px;
+}
+.about-themes-intro p{
+      width: 90%;
+      line-height: 1.6;
+      font-size: 18px;
+}
+.about-themes-intro a{
+      width: 220px;
+      height: 55px;
+      background: var(--main-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: whitesmoke;
+      flex-shrink: 0;
+      font-size: 15px;
+}
+
+.about-themes-row-moja{
+      display: grid;
+      grid-template-columns: 1.4fr 2.5fr;
+      margin-top: 60px;
+}
+.about-themes-row-moja h2{
+       font-size: 40px;
+       font-weight: 500;
+       margin-top: 20px;
+       position: sticky;
+      top: 50px;
+}
+
+.about-themes-row-moja .themes-row-texts{
+       padding: 30px 60px;
+       border-left: 1px solid gainsboro;
+}
+.themes-row-images{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+}
+.themes-row-texts img{
+       max-height: 400px;
+}
+.themes-row-texts p{
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.6;
+      color: rgb(50, 50, 50);
+}
+.themes-row-texts p span{
+      font-weight: 600;
+      font-size: 20px;
+}
+.themes-row-texts ul{
+     margin-top: 20px;
+     width: 95%;
+     margin: 20px auto;
+}
+.themes-row-texts ul li{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 5px;
+    color: rgb(50, 50, 50);
+}
+.themes-row-texts ul li span{
+     color: var(--green-color);
+}
+
+
+.about-benefits{
+    padding: 40px 0px 100px 0px;
+}
+
+.about-benefits-intro{
+      width: 900px;
+      margin: auto;
+      text-align: center;
+}
+
+.about-benefits-intro h1{
+       font-size: 65px;
+       font-family: var(--bold-font);
+       margin-bottom: 10px;
+}
+
+.about-benefits-intro p{
+      font-size: 18px;
+      line-height: 1.7;
+}
+
+.about-benefits-row{
+     display: grid;
+     margin: 50px 0;
+     grid-template-columns: repeat(3,1fr);
+     gap: 40px;
+}
+.about-benefit-moja img{
+       max-height: 300px;
+}
+.about-benefit-moja h2{
+     font-size: 30px;
+     margin: 10px 0;
+     font-weight: 600;
+}
+.about-benefit-moja p{
+      line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 1100px){
     .about-body-content{
            gap: 40px;
@@ -110,6 +244,22 @@
 @media(max-width: 1090px){
     .about-body-content{
             grid-template-columns: 1fr;
+    }
+    .about-themes-intro{
+           flex-direction: column;
+           align-items: flex-start;
+           gap: 20px;
+    }
+    .about-themes-row-moja{
+            grid-template-columns: 1fr;
+            margin-top: 20px;
+     }
+     .about-themes-row-moja .themes-row-texts{
+            border-left: 0;
+            padding:  30px;
+    }
+    .about-benefits-intro{
+          width: 100%;
     }
 }
 
@@ -120,5 +270,39 @@
     .hero-landing-body h4{
            font-size: 22px;
            line-height: 1.6;
+    }
+   .about-extra-texts{
+          margin-top: 40px
+   }
+    .themes-row-texts img{
+          max-height: 300px;
+    }
+    .about-themes-row-moja h2{
+           font-size: 30px;
+           margin: 0;
+           position: relative;
+           top: 0;
+           margin-bottom: 20px;
+    }
+    .about-themes-row-moja .themes-row-texts{
+           padding: 20px;
+    }
+    .about-themes-intro h2{
+           font-size: 30px;
+    }
+
+    .about-benefits-row{
+           grid-template-columns: 1fr;
+           gap: 50px;
+    }
+    .about-benefits-intro h1,
+    .about-body-texts h1{
+         font-size: 45px;;
+    }
+    .about-benefits{
+          padding-top: 0px;
+    }
+    .about-benefit-moja h2{
+           font-size: 25px;
     }
 }

@@ -1,6 +1,12 @@
+import AboutBenefits from "../components/about/AboutBenefits"
 import AboutBody from "../components/about/AboutBody"
 import AboutThemes from "../components/about/AboutThemes"
+import CallToAction from "../components/common/CallToAction"
+import Footer from "../components/common/Footer"
 import Navbar from "../components/common/navigation/Navbar"
+import Speakers from "../components/home/Speakers"
+import Testimonials from "../components/home/Testimonials"
+import Tickets from "../components/home/Tickets"
 import "../css/about.css"
 const About = () => {
   return (
@@ -16,6 +22,11 @@ const About = () => {
              </div>
              <AboutBody />
              <AboutThemes />
+             <AboutBenefits />
+             <Tickets />
+             <Testimonials />
+            <CallToAction />
+            <Footer />
     </>
   )
 }
