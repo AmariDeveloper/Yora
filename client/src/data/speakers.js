@@ -25,8 +25,32 @@ export const speakers = [
     },
     {
         id: 4,
-        name: 'Joaquim Adriano',
-        position: "Board member - Orera Mining",
-        image: "/speakers/joaquim.webp"
-    }
+        name: 'Samson Kibunja',
+        position: "Master Barista, Trainer, and Coffee Connoisseur",
+        image: "/speakers/samson.webp"
+    },
+    {
+        id: 5,
+        name: 'Natasha Camy',
+        position: "Trailblazing Investor, Referee, and Community Leader",
+        image: "/speakers/natasha.webp"
+    },
+    {
+        id: 6,
+        name: 'Bayode Okusanya',
+        position: "CIO & Co-founder of eKNOX",
+        image: "/speakers/bayode.webp"
+    },
+    {
+        id: 7,
+        name: 'Howard Saddler',
+        position: "CEO and President of Caribbean Finder",
+        image: "/speakers/howard.webp"
+    },
+    {
+        id: 8,
+        name: 'Marcos R.G. Brandalise',
+        position: "Group C.E.O. BrazAfric Group of Companies",
+        image: "/speakers/marcos.webp"
+    },
 ]

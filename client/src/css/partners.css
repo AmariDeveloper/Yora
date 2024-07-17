@@ -1,0 +1,121 @@
+.hero-landing.partners{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/partnersBg.jpg") no-repeat;
+    background-position: center 40%;
+    background-size: cover;
+}
+
+.partner-body{
+      padding: 100px 0;
+}
+
+.partner-intro{
+      display: grid;
+      grid-template-columns: 1fr 1fr;;
+      gap: 60px;
+}
+.partner-intro h3{
+     font-size: 25px;
+     line-height: 1.6;
+     font-weight: 400;
+}
+
+.partner-intro a{
+      font-size: 18px;
+      text-transform: uppercase;
+      color: rgb(50, 50, 50);
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      align-items: center;
+      height: 50px;
+      transition: all 0.7s ease;
+      -webkit-transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+}
+.partner-intro a:hover{
+       color: var(--main-color);
+}
+
+.partners-row{
+      margin-top: 60px;
+}
+.partners-row h2{
+       font-size: 50px;
+       text-align: center;
+       margin-bottom: 40px;
+}
+
+.sponsorship-wrap{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       margin-top: 60px;
+       width: 900px;
+}
+.sponsorship-wrap img{
+       height: 400px;
+       max-width: 350px;
+}
+
+.sponsor-texts h3{ 
+         font-size: 30px;
+         text-transform:uppercase;
+}
+
+.sponsor-texts h4{
+      font-size: 18px;
+      margin: 20px 0;
+      color: rgb(97, 97, 97);
+      font-weight: 600;
+}
+.sponsor-texts p{
+      font-size: 18px;
+      color: gray;
+}
+.sponsor-texts a{
+      margin-top: 30px;
+      width: 200px;
+      height: 50px;
+      background: var(--main-color);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1090px){
+    .sponsorship-wrap{
+           width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+       .partner-intro{
+            grid-template-columns: 1fr;
+            gap: 20px;
+       }
+       .partner-intro a{
+             justify-content: flex-start;
+       }
+       .partner-intro h3{
+             font-size: 20px;
+       }
+       .partners-row h2{
+            font-size: 40px;
+       }
+       .sponsorship-wrap{
+             grid-template-columns: 1fr;
+             gap: 20px;
+       }
+       .sponsorship-wrap img{
+              max-width: 100%;
+      }
+}

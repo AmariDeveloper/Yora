@@ -1,0 +1,63 @@
+.hero-landing.speakers{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/speakersBG.jpg") no-repeat;
+    background-position: center 40%;
+    background-size: cover;
+}
+.hero-landing .hero-landing-texts{
+       display: flex;
+       gap: 40px;
+       align-items: center;
+       justify-content: space-between;
+}
+.hero-landing-texts a{
+      width: 240px;
+      flex-shrink: 0;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--main-color);
+      color: white;
+}
+.speakers-body{
+      padding: 100px 0;
+      background: rgb(15, 0, 0);
+}
+.speakers-body  .masterclass-intro{
+       color: whitesmoke;
+}
+.masterclass-intro p{
+      font-size: 18px;
+      line-height: 1.6;
+}
+
+.speakers-wrapper{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+}
+  
+
+@media(max-width: 1090px){
+    .hero-landing.speakers .hero-landing-texts{
+           flex-direction: column;
+           gap: 20px;
+           align-items: flex-start;
+    }
+    .speakers-row{
+            grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 768px){
+    .speakers-row{
+            grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 530px){
+    .speakers-row{
+           grid-template-columns: 1fr;
+    }
+}

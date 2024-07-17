@@ -10,7 +10,7 @@ import logo8 from "../../assets/partner8.webp"
 import logo9 from "../../assets/partner9.webp"
 import logo10 from "../../assets/partner10.jpeg"
 import logo11 from "../../assets/partner11.png"
-import logo12 from "../../assets/partner12.png"
+// import logo12 from "../../assets/partner12.png"
 import logo13 from "../../assets/partner13.png"
 import { Link } from "react-router-dom";
 import about1 from "../../assets/about1.webp"
@@ -44,7 +44,7 @@ const AboutSection = () => {
                                                            <img src={logo9} alt="" />
                                                            <img src={logo10} alt="" />
                                                            <img src={logo11} alt="" />
-                                                           <img src={logo12} alt="" />
+                                                           {/* <img src={logo12} alt="" /> */}
                                                            <img src={logo13} alt="" />
                                                 </div>
                                      </div>
