@@ -1,0 +1,33 @@
+.hero-landing.contact{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/contactBg.jpg") no-repeat;
+    background-position: center 40%;
+    background-size: cover;
+}
+
+.contact-body{
+      padding: 100px 0;
+}
+
+.contact-intro h3{
+       text-align: center;
+       width: 700px;
+       font-weight: 400;
+       margin: auto;
+       font-size: 30px;
+       line-height: 1.7;
+}
+
+.contact-box-wrap{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 30px;
+       margin-top: 50px;
+       width: 1000px;
+       margin: 50px auto 0px auto;
+}
+.contact-email-moja .icon img{
+      width: 40px;
+      height: 40px;
+      filter: invert(10%) sepia(78%) saturate(6032%) hue-rotate(1deg) brightness(91%) contrast(115%);
+      -webkit-filter: invert(10%) sepia(78%) saturate(6032%) hue-rotate(1deg) brightness(91%) contrast(115%);
+}

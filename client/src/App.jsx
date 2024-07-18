@@ -5,6 +5,7 @@ import About from './pages/About'
 import Masterclasses from './pages/Masterclasses'
 import Speakers from './pages/Speakers'
 import Partners from './pages/Partners'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
              <Route path="/masterclasses" element={<Masterclasses />} />
              <Route path='/speakers' element={<Speakers />} />
              <Route path='/partners' element={<Partners />} />
+             <Route path='/contact' element={<Contact />} />
     </Routes>
   )
 }
