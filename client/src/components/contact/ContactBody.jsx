@@ -1,4 +1,5 @@
 import email from "../../assets/mail.png"
+import ContactForm from "./ContactForm"
 const ContactBody = () => {
   return (
     <div className="contact-body">
@@ -36,6 +37,9 @@ const ContactBody = () => {
                                                             </div>
                                                 </div>
                                     </div>
+
+                                    <ContactForm />
+                  
                          </div>
                </div>
     </div>

@@ -1,7 +1,7 @@
 import Navbar from "../components/common/navigation/Navbar"
 import ContactBody from "../components/contact/ContactBody"
 import "../css/contact.css"
-
+import Footer from "../components/common/Footer"
 const Contact = () => {
   return (
      <>
@@ -18,6 +18,7 @@ const Contact = () => {
                         </div>
             </div>
             <ContactBody />
+            <Footer />
       </>
   )
 }

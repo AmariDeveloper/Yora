@@ -45,6 +45,12 @@ img{
      margin: auto;
 }
 
+input,
+button,
+textarea{
+       font-family: var(--regular-font);
+}
+
 
 header{
       position: absolute;
