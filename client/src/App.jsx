@@ -6,6 +6,7 @@ import Masterclasses from './pages/Masterclasses'
 import Speakers from './pages/Speakers'
 import Partners from './pages/Partners'
 import Contact from './pages/Contact'
+import SingleMasterclass from './pages/SingleMasterclass'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
              <Route path='/' element={<Home />} />
              <Route path="/the-event" element={<About />} />
              <Route path="/masterclasses" element={<Masterclasses />} />
+             <Route path='/masterclass/:name' element={<SingleMasterclass />} />
              <Route path='/speakers' element={<Speakers />} />
              <Route path='/partners' element={<Partners />} />
              <Route path='/contact' element={<Contact />} />

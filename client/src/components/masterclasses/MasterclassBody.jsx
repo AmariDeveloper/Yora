@@ -17,7 +17,7 @@ const MasterclassBody = () => {
                                                                                 <div className="overlay-texts">
                                                                                           <h4>{item.name}</h4>
                                                                                           <p>{item.description}</p>
-                                                                                          <Link to={"/"}>Explore</Link>
+                                                                                          <Link to={item.link}>Explore</Link>
                                                                                 </div>
                                                                       </div>
                                                                       <h4  className="m-n">{item.name}</h4>

@@ -25,6 +25,95 @@
 }
 
 
+.single-masterclass-body{
+       padding: 80px 0;
+}
+
+.single-masterclass-row{
+       display: grid;
+       grid-template-columns: 2.5fr 1fr;
+       gap: 50px;
+}
+
+.masterclass-accordion{
+       border: 1px solid gainsboro;
+       margin-top: 20px;
+}
+.masterclass-accordion .accordion-header{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       border-bottom: 1px solid gainsboro;
+       padding: 20px;
+     
+}
+.accordion-header h3{
+       font-size: 25px;
+       font-weight: 500;;
+}
+.masterclass-accordion.active .accordion-header h3,
+.masterclass-accordion.active .accordion-header span{
+       color: var(--main-color);
+}
+.accordion-header span{
+       font-size: 25px;
+       display: flex;
+}
+.masterclass-accordion .accordion-answer{
+       max-height: 0;
+       overflow: hidden;
+       transition: all 0.8s ease;
+       -webkit-transition: all 0.8s ease;
+       -moz-transition: all 0.8s ease;
+       -ms-transition: all 0.8s ease;
+       -o-transition: all 0.8s ease;
+}
+.masterclass-accordion.active .accordion-answer{
+       max-height: 600px;
+}
+.accordion-answer .accordion-answer-inner{
+        padding: 20px;
+}
+
+.accordion-answer ul{
+         width: 90%;
+}
+.accordion-answer ul li{
+       gap: 10px;
+       display: flex;
+       margin-bottom: 20px;
+       line-height: 1.4;
+}
+.accordion-answer ul li span{
+       display: flex;
+       margin-top: 1px;
+       color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 1090px){
     .masterclass-intro{
           width: 100%;
