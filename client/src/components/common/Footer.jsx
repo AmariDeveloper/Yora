@@ -11,18 +11,18 @@ const Footer = () => {
                                  <div className="footer-column">
                                             <h3>About the Event</h3>
                                             <ul>
-                                                        <li><Link to={'/'}>The Event</Link></li>
-                                                        <li><Link to={"/"}>Who is Attending</Link></li>
-                                                        <li><Link to={"/"}>Speakers</Link></li>
-                                                        <li><Link to={"/"}>Partners</Link></li>
+                                                        <li><Link to={'/the-event'}>The Event</Link></li>
+                                                        <li><Link to={"#"}>Who is Attending</Link></li>
+                                                        <li><Link to={"/speakers"}>Speakers</Link></li>
+                                                        <li><Link to={"/partners"}>Partners</Link></li>
                                             </ul>
                                  </div>
                                  <div className="footer-column">
                                               <h3>Useful Links</h3>
                                               <ul>
-                                                       <li><Link to={"/"}>Tickets</Link></li>
-                                                       <li><Link to={"/"}>Masterclasses</Link></li>
-                                                       <li><Link to={"/"}>Terms & Conditions</Link></li>
+                                                       <li><Link to={"/tickets"}>Tickets</Link></li>
+                                                       <li><Link to={"/masterclasses"}>Masterclasses</Link></li>
+                                                       <li><Link to={"#"}>Terms & Conditions</Link></li>
                                               </ul>
                                  </div>
                                  <div className="footer-column">

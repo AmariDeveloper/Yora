@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -7,8 +7,16 @@ import Speakers from './pages/Speakers'
 import Partners from './pages/Partners'
 import Contact from './pages/Contact'
 import SingleMasterclass from './pages/SingleMasterclass'
+import { useEffect } from 'react'
+import Tickets from './pages/Tickets'
 
 function App() {
+  const location = useLocation();
+
+  useEffect(()=> {
+         window.scrollTo(0, 0);
+  }, [location])
+
   return (
     <Routes>
              <Route path='/' element={<Home />} />
@@ -18,6 +26,7 @@ function App() {
              <Route path='/speakers' element={<Speakers />} />
              <Route path='/partners' element={<Partners />} />
              <Route path='/contact' element={<Contact />} />
+             <Route path='/tickets' element={<Tickets />} />
     </Routes>
   )
 }

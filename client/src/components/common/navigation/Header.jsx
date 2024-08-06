@@ -4,6 +4,7 @@ import { CgMenuRight } from "react-icons/cg";
 import { useContext } from "react";
 import { sidebarContext } from "./sidebarContext";
 const Header = () => {
+  // eslint-disable-next-line no-unused-vars
   const [sidebarStatus, setSidebarStatus ] = useContext(sidebarContext)
   return (
     <header>
@@ -22,7 +23,7 @@ const Header = () => {
                                           </ul>
 
                                           <div className="header-actions">
-                                                   <Link to="/">Buy Ticket</Link>
+                                                   <Link to="/tickets">Buy Ticket</Link>
 
                                                    <span className="menu-btn" onClick={() => setSidebarStatus(true)}><CgMenuRight /></span>
                                           </div>
